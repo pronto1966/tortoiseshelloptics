@@ -1,0 +1,290 @@
+/* Tim Baiton's Code Academy - Unit 5 Tortoiseshell Optics stylesheet */
+
+/* global styles */
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: white;
+}
+
+body {
+  line-height: 1.4rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+/*end global styles */
+
+
+/* header section */
+header {
+  height: 30rem;
+  padding-top: 1rem;
+  background-image: url("../images/glasses-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  }
+
+  header .flex {
+  justify-content: flex-end;
+  }
+
+nav {
+  background-color: cadetblue;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav span {
+  font-size: 1rem;
+}
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+ul li {
+  display: inline;
+  padding: 0 1rem;
+}
+
+.smallscreen-menu {
+  display: none;
+}
+
+.main-banner {
+  background-color: white;
+  padding: 1.5rem 5rem;
+  display: inline-block;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  }
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+/* end header section */
+
+
+/* applies to services icons section and philosophy appointment section */
+.supporting {
+  display: flex;
+  justify-content: center;
+}
+/* end */
+
+
+/* Services icons Section*/
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+  width: 5rem;
+  height: 8rem;
+}
+
+.service img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.service img.paper-icon {
+  width: 3.5rem;
+}  
+/* end services icons section */
+
+
+/*philosophy appointments section*/
+.info {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+  }
+
+.info p {
+  padding: 1rem 0 ;
+}
+
+.title {
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  font-weight: bold;
+  color: white;
+  max-width: 10rem;
+}
+/*end philosophy appointment section*/
+
+
+/*footer*/
+footer {
+  display: flex;
+  align-items: center;
+  background-color: azure;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 4rem;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+/*end footer*/
+
+
+/*media query for landscape tablet size*/
+@media only screen and (max-width: 1024px) {
+  header {
+    padding-top: 0;
+    height: 22rem;
+  }
+
+  nav.container {
+    max-width: 100%;
+  }
+
+  .main-banner {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .main-banner h1 {
+    font-size: 1.33rem;
+  }
+}/* close media query brace */
+/*end media query for landscape tablet size*/
+
+
+/*media query for portrait tablet size*/
+@media only screen and (max-width: 720px) {
+
+header {
+  padding-top: 0;
+  height: 17rem;
+}
+
+nav.container {
+  max-width: 100%;
+}
+
+.menu ul {
+  display: none;
+}
+
+.menu ul.smallscreen-menu {
+  display: block;
+}
+
+.main-banner h1 {
+  font-size: 1rem;
+}
+
+.main-banner {
+  margin: 9rem auto 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+} /* close media query brace */
+/*end media query for portrait size*/
+
+
+/*media query for moblie size*/
+@media only screen and (max-width: 560px) {
+
+header {
+  padding-top: 0;
+  height: 17rem;
+  background-position: 20%;
+}
+
+header div span {
+  display: none;
+}
+
+nav.container {
+  max-width: 100%;
+}
+
+.menu ul {
+  display: none;
+}
+
+.menu ul.smallscreen-menu {
+  display: block;
+}
+
+.main-banner h1 {
+  font-size: 1rem;
+}
+
+.main-banner {
+  margin: 9rem auto 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.supporting {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 3rem;
+}
+
+.info {
+  width: auto;
+}
+
+.info .title {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.info p {
+  padding: 1.54rem;
+  font-size: .77rem;
+}
+
+.service {
+  height: auto;
+  margin: .77rem;
+  font-size: .77rem;
+}
+
+footer {
+  justify-content: center;
+}
+
+footer div {
+  display: none;
+}
+
+} /* close media query brace */
+/*end media query for mobile size*/
